@@ -1,0 +1,94 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SupaDupa1802 Home</title>
+
+<style>
+/* Body */
+body{@charset "utf-8";   background-color:#99BFA4;  font-size:normal;  color:black;}
+
+/* Container Classes */
+.c0{ background-color:white; color:black;  margin:5px; padding:5px; border:1px solid black; font-size:200%;}   /* most basic container */ 
+.cExample{ background-color:yellow; color:blue;  margin:5px; padding:5px; border:5px solid red; box-shadow: 3px 2px maroon; text-shadow: 3px 2px green; font-size:70%;}   /* class cExample */ 
+
+/* Fonts */
+.fs{font-size:small;}                                              /* small font size */
+.fR{color:red;}  .fRB{color:red; font-weight:bold;}        /* font color red, 100% and bold */
+.fB{color:MidnightBlue;}  .fBB{colorMidnightBlue; font-weight:bold;}        /* font color blue (greyish), 100% and bold, 100% blus is used for links */
+.fM{color:Maroon;}  .fMB{color:Maroon; font-weight:bold;}        /* font color maroon, 100% and bold */
+.fG{color:MediumSeaGreen;}  .fGB{color:#MediumSeaGreen; font-weight:bold;}        /* font color green (dark), 100% and bold  */
+
+/* Tables */
+table.nb {  border-collapse: collapse;   margin:5px;  }                                         /* table with 100% fonts and border  */
+table.st{font-size:small;}   table.stb{font-size:small;border-collapse: collapse; margin:5px;}  /* table with small fonts +/- border  */
+table.stb td,table.stb th,table.nb td,table.nb th { border: 2px solid black; padding: 2px; }    /* table elements with small fonts + border  */
+
+/^   This Page */
+
+.cButton{color:#f0f0f0;  background-color:#611800; font-size:100%;  box-shadow: 3px 2px aqua;}   /* replacing buttons  */
+.cContent{background-color:#E0E0E0; color:#000000;  padding:5px; border:1px solid black; font-size:100%;} 
+.cLabel{color:#f0f0f0;  background-color:#611800; font-size:100%;} 
+
+</style>
+
+<script>
+<!--
+//            Javascript program controlling collapsible panels
+
+cStart = "a";
+cFinish = "z";
+nStart = "0";
+nFinish = 100;  // reserve 90-100 for special use
+function expandDiv(curobj,which){trig=document.getElementById(which).style.display;if(trig=="block"){trig="none";}else if(trig=="" || trig=="none"){trig="block";}  document.getElementById(which).style.display=trig;}
+function DivExists(id){if(!!document.getElementById(id)) return 1;  return 0;}
+function ChangeShowEach(id, displayType){if(DivExists(id)==1) document.getElementById(id).style.display = displayType;}
+function ChangeShowAll(displayType){for(i=cStart.charCodeAt(0); i<= cFinish.charCodeAt(0);i++){c = String.fromCharCode(i);for(j=nStart; j<=nFinish;j++){id = `${c}${j}`;ChangeShowEach(id, displayType)}}}
+function DoShow(){ChangeShowAll("block");}
+function DoHide(){ChangeShowAll("none");}
+function ChangeShow(onAr){DoHide(); for(i=0;i<onAr.length;i++) ChangeShowEach(onAr[i], "block");}
+
+-->
+</script>
+
+
+</head>
+<!--<body style="background-image:url('http://SupaDupa1802.github.io/SupaDupa1802WM_b.png')"> -->
+<body >
+<h2 align="center">SupaDupa1802 Homepage</h2>
+<div align="center"><table><tr><td align="left" class="cContent">
+<img src="http://SupaDupa1802.github.io/SupaDupa1802Logo.png" style="width:20%; float:right;">
+
+<h3 align="center">Sign in/out</h3>
+
+<h3 align="center">To Sign In</h3>
+At the computer 
+<ol class="fM">
+<li>Have access to email amzchang@hotmail.com
+<li>Access <a href="https://SupaDupa1802.github.io/Start1802_Encrypt.html">Sign in Control Panel</a>
+<li>Go to account <a href="https://github.com/SupaDupa1802/">https://github.com/SupaDupa1802/</a>
+<li>Click <b>Log in</b> button
+<li>Enter email address and account password (may need validation from email)
+<li>Click <b>Sign in</b>
+</ol>
+
+<h3 align="center">To Sign out</h3>
+At the main page
+<ol class="fM">
+<li>Click on small account acon top right corner of page
+<li>Scroll down to bottom of drop down list
+<li>Click <b>Sign Out</b>
+</ol>
+
+
+<h3 align="center">Links</h3>
+
+<h3 align="center">SupaDupa1802 Site Management</h3>
+<a href="https://SupaDupa1802.github.io/S2/Help/RepositoryAndFiles1802.html">Repository and File Management</a><br />
+<a href="https://SupaDupa1802.github.io/S2/Help/MakeStyle.html">Make Styles and classes</a>
+
+
+</td></tr></table></div>
+
+</body>
+</html>
