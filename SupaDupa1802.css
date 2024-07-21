@@ -1,6 +1,6 @@
  <style>
 /* Body */
-body{background-color:#99BFA4;  font-size:normal;  color:black;  }
+.bd{background-color:#99BFA4;  font-size:normal;  color:black;  }
 
 /* Container Classes */
 .c0{ background-color:white; color:black;  margin:5px; padding:5px; border:1px solid black; font-size:200%;}   /* most basic container */ 
